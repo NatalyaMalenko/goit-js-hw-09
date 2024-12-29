@@ -14,3 +14,34 @@
 @import url('./header.css');
 @import url('./badges.css');
 @import url('./back-link.css');
+
+@import 'simplelightbox/dist/simple-lightbox.min.css';
+
+* {
+  box-sizing: border-box;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 24px;
+  margin: 0 auto;
+}
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
+.gallery-image:hover {
+  width: 376px;
+  height: 208px;
+}
+.gallery-item {
+  max-width: 100%;
+  width: calc((100%-48px) / 3);
+}
